@@ -12,7 +12,7 @@
     <body class="epoch-theme-default">
         <div id="moderator">
             <h1>Poll responses</h1>
-            <select v-model="selected">
+            <select class="form-control" v-model="selected">
                 <option selected value="">select a poll</option>
                 <option v-repeat="polls" value="{{ id }}">
                     {{ statement }} 
@@ -25,7 +25,7 @@
 
         <!-- Latest compiled and minified JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-        
+
         <script src="/js/vue.min.js"></script>
         <script src="/socket.io/socket.io.js"></script>
         
